@@ -1,0 +1,18 @@
+import { Component, OnInit } from '@angular/core';
+
+declare var $;
+
+@Component({
+  selector: 'app-details',
+  templateUrl: './details.component.html',
+  styleUrls: ['./details.component.sass']
+})
+export class DetailsComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+    $('.modal').modal();
+  }
+
+}
